@@ -1,0 +1,36 @@
+.back {
+  cursor: pointer;
+  background-color: aqua;
+  font-size: 16px;
+  color: whitesmoke;
+  padding: 5px 5px 5px 30px;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  max-width: fit-content;
+  transition: color 0.3s ease;
+  margin-bottom: 16px;
+  position: relative;
+  outline: none;
+}
+
+.back::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-left: 2px solid whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+  transform: rotate(45deg) translateY(-50%);
+  transition: left 0.3s ease;
+}
+
+.back:focus {
+  color: rgb(185, 173, 156);
+}
+
+.back:hover::before {
+  left: 6px;
+}
