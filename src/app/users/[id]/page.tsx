@@ -1,7 +1,7 @@
 "use client";
 
 import { ButtonBack } from "@/app/components/ButtonBack/ButtonBack";
-import { type User } from "@/app/types/user";
+import { User } from "@/app/types/user";
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import axios from "../../utils/axios";
